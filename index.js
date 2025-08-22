@@ -121,7 +121,7 @@ app.post('/api/persons', (request, response) => {
     const newEntry = {
       name: entry.name,
       number: entry.number,
-      id: generated_id
+      id: generated_id.toString()
     }
     pb_entries = pb_entries.concat(newEntry)
     response.json(entry)
